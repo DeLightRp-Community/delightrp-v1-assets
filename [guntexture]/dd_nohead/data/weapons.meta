@@ -2070,13 +2070,13 @@
           <OverrideForces>
             <Item>
               <BoneTag>BONETAG_HEAD</BoneTag>
-              <ForceFront value="70.000000" />
-              <ForceBack value="60.000000" />
+              <ForceFront value="15.000000" />
+              <ForceBack value="10.000000" />
             </Item>
             <Item>
               <BoneTag>BONETAG_NECK</BoneTag>
-              <ForceFront value="80.000000" />
-              <ForceBack value="60.000000" />
+              <ForceFront value="15.000000" />
+              <ForceBack value="10.000000" />
             </Item>
             <Item>
               <BoneTag>BONETAG_SPINE2</BoneTag>

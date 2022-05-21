@@ -1,8 +1,8 @@
-fx_version 'adamant'
-games { 'gta5' }
+fx_version 'cerulean'
+game 'gta5'
 
 files {
-	'peds.meta'
+    'peds.meta'
 }
-	
+
 data_file 'PED_METADATA_FILE' 'peds.meta'
