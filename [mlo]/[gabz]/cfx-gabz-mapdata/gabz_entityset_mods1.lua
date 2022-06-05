@@ -159,6 +159,7 @@ local interiors = {
         ipl = 'gabz_davispd_milo_',
         coords = { x = 371.0543, y = -1600.378, z = 34.73263 },
         entitySets = {
+            --{ name = 'davispd_room01_mainhall_ex', enable = true }, --enable this if you want an extra wall before main hall
             { name = 'davispd_room01_rainhall_es', enable = true },
             { name = 'davispd_room02_reception_es', enable = true },
             { name = 'davispd_room03_captainoffice_es', enable = true },
@@ -239,6 +240,7 @@ local interiors = {
             { name = 'room14_vaultstairs', enable = true },
             { name = 'room15_vaultbasement', enable = true },
             { name = 'room16_vault', enable = true },
+            { name = 'room16_vault_trolleys', enable = true }, -- gold and cash trolleys
         }
     },
 }
