@@ -11,6 +11,18 @@
 					</Weapons>
 					<Clip>unarmed_holster_unarmed</Clip>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<Clip>unarmed_holster_2h_melee</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>unarmed_holster_1h</Clip>
+				</Item>
 			</UnholsterClips>
 		</Item>
 		<Item>
@@ -22,6 +34,18 @@
 						<Item>WEAPON_KATANAS</Item>
 					</Weapons>
 					<Clip>2h_melee_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<Clip>2h_melee_holster_2h_melee</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>2h_melee_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -35,6 +59,18 @@
 					</Weapons>
 					<Clip>1h_holster_unarmed</Clip>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<Clip>1h_holster_2h_melee</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>1h_holster_1h</Clip>
+				</Item>
 			</UnholsterClips>
 		</Item>
 		<Item>
@@ -46,6 +82,18 @@
 						<Item>WEAPON_KATANAS</Item>
 					</Weapons>
 					<Clip>2h_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<Clip>2h_holster_2h_melee</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>2h_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -59,6 +107,18 @@
 					</Weapons>
 					<Clip>mini_holster_2h_unarmed</Clip>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<Clip>mini_holster_2h_melee</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>mini_holster_1h</Clip>
+				</Item>
 			</UnholsterClips>
 		</Item>
 		<Item>
@@ -68,8 +128,15 @@
 					<Weapons>
 						<Item>WEAPON_SHIV</Item>
 						<Item>WEAPON_KATANAS</Item>
+						<Item>WEAPON_BATS</Item>
 					</Weapons>
 					<Clip>unarmed_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>unarmed_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -80,8 +147,15 @@
 					<Weapons>
 						<Item>WEAPON_SHIV</Item>
 						<Item>WEAPON_KATANAS</Item>
+						<Item>WEAPON_BATS</Item>
 					</Weapons>
 					<Clip>unarmed_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>unarmed_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -92,8 +166,15 @@
 					<Weapons>
 						<Item>WEAPON_SHIV</Item>
 						<Item>WEAPON_KATANAS</Item>
+						<Item>WEAPON_BATS</Item>
 					</Weapons>
 					<Clip>1h_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>1h_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -104,8 +185,15 @@
 					<Weapons>
 						<Item>WEAPON_SHIV</Item>
 						<Item>WEAPON_KATANAS</Item>
+						<Item>WEAPON_BATS</Item>
 					</Weapons>
 					<Clip>2h_holster_unarmed</Clip>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<Clip>2h_holster_1h</Clip>
 				</Item>
 			</UnholsterClips>
 		</Item>
@@ -115,6 +203,28 @@
 			<Name>DEFAULT_ACTION</Name>
 			<MovementModes>
 				<Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_SHIV</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_action@p_m_zero@unarmed@core</MovementClipSetId>
+								<WeaponClipSetId />
+								<WeaponClipFilterId />
+								<UpperBodyShadowExpressionEnabled value="false" />
+								<UpperBodyFeatheredLeanEnabled value="false" />
+								<UseWeaponAnimsForGrip value="true" />
+								<UseLeftHandIk value="false" />
+								<IdleTransitions>
+									<Item>MOVE_ACTION@GENERIC@TRANS@UNARMED</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_UNARMED" />
+							</Item>
+						</ClipSets>
+					</Item>
 					<Item>
 						<Weapons>
 							<Item>WEAPON_KATANAS</Item>
@@ -137,8 +247,74 @@
 							</Item>
 						</ClipSets>
 					</Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_BATS</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>MOVE_ACTION@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+								<WeaponClipSetId>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@UPPER</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true"/>
+								<UpperBodyFeatheredLeanEnabled value="false"/>
+								<UseWeaponAnimsForGrip value="false"/>
+								<UseLeftHandIk value="true"/>
+								<IdleTransitionBlendOutTime value="0.50000000"/>
+								<IdleTransitions>
+									<Item>MOVE_ACTION@GENERIC@TRANS@2H_MELEE</Item>
+								</IdleTransitions>
+								<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+								<UnholsterClipData>UNHOLSTER_2H_MELEE</UnholsterClipData>
+							</Item>
+						</ClipSets>
+					</Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_REVOLVER</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_action@p_m_zero@armed@core</MovementClipSetId>
+								<WeaponClipSetId>move_action@p_m_zero@armed@1H@upper</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true" />
+								<UpperBodyFeatheredLeanEnabled value="true" />
+								<UseWeaponAnimsForGrip value="false" />
+								<UseLeftHandIk value="true" />
+								<IdleTransitions>
+									<Item>MOVE_ACTION@GENERIC@TRANS@1H</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_1H" />
+							</Item>
+						</ClipSets>
+					</Item>
 				</Item>
 				<Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_SHIV</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+								<WeaponClipSetId>Wpn_Switchblade_Stealth</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true" />
+								<UpperBodyFeatheredLeanEnabled value="false" />
+								<UseWeaponAnimsForGrip value="false" />
+								<UseLeftHandIk value="false" />
+								<IdleTransitions>
+									<Item>move_stealth@generic@trans@unarmed</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+							</Item>
+						</ClipSets>
+					</Item>
 					<Item>
 						<Weapons>
 							<Item>WEAPON_KATANAS</Item>
@@ -161,6 +337,49 @@
 							</Item>
 						</ClipSets>
 					</Item>
+					Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_STEALTH@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>WEAPONS@MELEE_STEALTH_1H</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="false"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@GENERIC@TRANS@2H_MELEE</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE_STEALTH</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>move_stealth@p_m_zero@1h@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="true" />
+							<IdleTransitions>
+								<Item>move_stealth@generic@trans@1h</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>move_stealth@p_m_zero@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H_STEALTH" />
+						</Item>
+					</ClipSets>
 				</Item>
 			</Item>
 		</MovementModes>
@@ -169,6 +388,28 @@
 		<Name>MP_FEMALE_ACTION</Name>
 		<MovementModes>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId />
+							<WeaponClipFilterId />
+							<UpperBodyShadowExpressionEnabled value="false" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="true" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@MP_FEMALE@UNARMED@TRANS@</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -191,8 +432,74 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_STEALTH@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>WEAPONS@MELEE_STEALTH_1H</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="false"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@GENERIC@TRANS@2H_MELEE</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE_STEALTH</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_zero@armed@core</MovementClipSetId>
+							<WeaponClipSetId>move_action@p_m_zero@armed@1H@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="true" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@MP_FEMALE@ARMED@1H@TRANS</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>Wpn_Switchblade_Stealth</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@MP_FEMALE@UNARMED@TRANS</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -215,6 +522,50 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_ACTION@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@UPPER</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="true"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_ACTION@MP_FEMALE@ARMED@2H_MELEE@TRANS</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>move_stealth@p_m_zero@1h@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="true" />
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@MP_FEMALE@1H@TRANS</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>move_stealth@p_m_zero@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 		</MovementModes>
 	</Item>
@@ -222,6 +573,28 @@
 		<Name>MICHAEL_ACTION</Name>
 		<MovementModes>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId />
+							<WeaponClipFilterId />
+							<UpperBodyShadowExpressionEnabled value="false" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="true" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@P_M_ZERO@UNARMED@TRANS@A</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -244,8 +617,74 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_STEALTH@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>WEAPONS@MELEE_STEALTH_1H</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="false"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@MP_FEMALE@2H_MELEE@TRANS</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE_STEALTH</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_zero@armed@core</MovementClipSetId>
+							<WeaponClipSetId>move_action@p_m_zero@armed@1H@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="true" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@P_M_ZERO@ARMED@1H@TRANS@A</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>Wpn_Switchblade_Stealth</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>move_stealth@p_m_zero@unarmed@trans@a</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -268,6 +707,50 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_ACTION@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@UPPER</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="true"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@TRANS@P_M_ZERO</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_zero@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>move_stealth@p_m_zero@1h@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="true" />
+							<IdleTransitions>
+								<Item>move_stealth@p_m_zero@1h@trans@a</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>move_stealth@p_m_zero@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 		</MovementModes>
 	</Item>
@@ -275,6 +758,28 @@
 		<Name>FRANKLIN_ACTION</Name>
 		<MovementModes>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_one@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId />
+							<WeaponClipFilterId />
+							<UpperBodyShadowExpressionEnabled value="false" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="true" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@P_M_ONE@UNARMED@TRANS@A</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -297,8 +802,74 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_STEALTH@P_M_ZERO@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>WEAPONS@MELEE_STEALTH_1H</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="false"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@GENERIC@2H_MELEE_WEAPON@P_M_ZERO</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ZERO@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE_STEALTH</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_one@armed@core</MovementClipSetId>
+							<WeaponClipSetId>move_action@p_m_one@armed@1H@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@P_M_ONE@ARMED@1H@TRANS@A</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ONE@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_one@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>Wpn_Switchblade_Stealth</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>move_stealth@p_m_one@unarmed@trans@a</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -321,6 +892,50 @@
 						</Item>
 					</ClipSets>
 				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_ACTION@P_M_ONE@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@UPPER</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="true"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@TRANS@P_M_ONE</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_ACTION@P_M_ONE@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_REVOLVER</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_stealth@p_m_one@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId>move_stealth@p_m_one@1h@upper</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true" />
+							<UpperBodyFeatheredLeanEnabled value="true" />
+							<UseWeaponAnimsForGrip value="false" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>move_stealth@p_m_one@1h@trans@a</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ONE@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_1H_STEALTH" />
+						</Item>
+					</ClipSets>
+				</Item>
 			</Item>
 		</MovementModes>
 	</Item>
@@ -328,6 +943,28 @@
 		<Name>TREVOR_ACTION</Name>
 		<MovementModes>
 			<Item>
+				<Item>
+					<Weapons>
+						<Item>WEAPON_SHIV</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>move_action@p_m_two@unarmed@core</MovementClipSetId>
+							<WeaponClipSetId />
+							<WeaponClipFilterId />
+							<UpperBodyShadowExpressionEnabled value="false" />
+							<UpperBodyFeatheredLeanEnabled value="false" />
+							<UseWeaponAnimsForGrip value="true" />
+							<UseLeftHandIk value="false" />
+							<IdleTransitions>
+								<Item>MOVE_ACTION@P_M_TWO@UNARMED@TRANS@A</Item>
+							</IdleTransitions>
+							<IdleTransitionBlendOutTime value="0.500000"/>
+							<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+							<UnholsterClipData ref="UNHOLSTER_UNARMED" />
+						</Item>
+					</ClipSets>
+				</Item>
 				<Item>
 					<Weapons>
 						<Item>WEAPON_KATANAS</Item>
@@ -351,6 +988,74 @@
 					</ClipSets>
 				</Item>
 				<Item>
+					<Weapons>
+						<Item>WEAPON_BATS</Item>
+					</Weapons>
+					<ClipSets>
+						<Item>
+							<MovementClipSetId>MOVE_STEALTH@P_M_ONE@UNARMED@CORE</MovementClipSetId>
+							<WeaponClipSetId>WEAPONS@MELEE_STEALTH_1H@P_M_ONE</WeaponClipSetId>
+							<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+							<UpperBodyShadowExpressionEnabled value="true"/>
+							<UpperBodyFeatheredLeanEnabled value="false"/>
+							<UseWeaponAnimsForGrip value="false"/>
+							<UseLeftHandIk value="false"/>
+							<IdleTransitionBlendOutTime value="0.50000000"/>
+							<IdleTransitions>
+								<Item>MOVE_STEALTH@GENERIC@2H_MELEE_WEAPON@P_M_ONE</Item>
+							</IdleTransitions>
+							<UnholsterClipSetId>MOVE_STEALTH@P_M_ONE@HOLSTER</UnholsterClipSetId>
+							<UnholsterClipData>UNHOLSTER_2H_MELEE_STEALTH</UnholsterClipData>
+						</Item>
+					</ClipSets>
+				</Item>
+				<Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_REVOLVER</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_action@p_m_two@armed@core</MovementClipSetId>
+								<WeaponClipSetId>move_action@p_m_two@armed@1H@upper</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true" />
+								<UpperBodyFeatheredLeanEnabled value="true" />
+								<UseWeaponAnimsForGrip value="false" />
+								<UseLeftHandIk value="false" />
+								<IdleTransitions>
+									<Item>MOVE_ACTION@P_M_TWO@ARMED@1H@TRANS@A</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>MOVE_ACTION@P_M_TWO@HOLSTER</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_1H" />
+							</Item>
+						</ClipSets>
+					</Item>
+				</Item>
+				<Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_SHIV</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_stealth@p_m_two@unarmed@core</MovementClipSetId>
+								<WeaponClipSetId>Wpn_Switchblade_Stealth</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true" />
+								<UpperBodyFeatheredLeanEnabled value="false" />
+								<UseWeaponAnimsForGrip value="false" />
+								<UseLeftHandIk value="false" />
+								<IdleTransitions>
+									<Item>move_stealth@p_m_two@unarmed@trans@a</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>anim@melee@switchblade@holster</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+							</Item>
+						</ClipSets>
+					</Item>
 					<Item>
 						<Weapons>
 							<Item>WEAPON_KATANAS</Item>
@@ -370,6 +1075,50 @@
 								<IdleTransitionBlendOutTime value="0.500000"/>
 								<UnholsterClipSetId>MOVE_STEALTH@P_M_TWO@HOLSTER</UnholsterClipSetId>
 								<UnholsterClipData ref="UNHOLSTER_UNARMED_STEALTH" />
+							</Item>
+						</ClipSets>
+					</Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_BATS</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>MOVE_ACTION@P_M_TWO@UNARMED@CORE</MovementClipSetId>
+								<WeaponClipSetId>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@UPPER</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true"/>
+								<UpperBodyFeatheredLeanEnabled value="false"/>
+								<UseWeaponAnimsForGrip value="false"/>
+								<UseLeftHandIk value="true"/>
+								<IdleTransitionBlendOutTime value="0.50000000"/>
+								<IdleTransitions>
+									<Item>MOVE_ACTION@GENERIC@2H_MELEE_WEAPON@TRANS@P_M_TWO</Item>
+								</IdleTransitions>
+								<UnholsterClipSetId>MOVE_ACTION@P_M_TWO@HOLSTER</UnholsterClipSetId>
+								<UnholsterClipData>UNHOLSTER_2H_MELEE</UnholsterClipData>
+							</Item>
+						</ClipSets>
+					</Item>
+					<Item>
+						<Weapons>
+							<Item>WEAPON_REVOLVER</Item>
+						</Weapons>
+						<ClipSets>
+							<Item>
+								<MovementClipSetId>move_stealth@p_m_two@unarmed@core</MovementClipSetId>
+								<WeaponClipSetId>move_stealth@p_m_two@1h@upper</WeaponClipSetId>
+								<WeaponClipFilterId>UpperbodyAndIk_filter</WeaponClipFilterId>
+								<UpperBodyShadowExpressionEnabled value="true" />
+								<UpperBodyFeatheredLeanEnabled value="true" />
+								<UseWeaponAnimsForGrip value="false" />
+								<UseLeftHandIk value="false" />
+								<IdleTransitions>
+									<Item>move_stealth@p_m_two@1h@trans@a</Item>
+								</IdleTransitions>
+								<IdleTransitionBlendOutTime value="0.500000"/>
+								<UnholsterClipSetId>MOVE_STEALTH@P_M_TWO@HOLSTER</UnholsterClipSetId>
+								<UnholsterClipData ref="UNHOLSTER_1H_STEALTH" />
 							</Item>
 						</ClipSets>
 					</Item>

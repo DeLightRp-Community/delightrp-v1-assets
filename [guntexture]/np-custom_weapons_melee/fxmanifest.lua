@@ -9,7 +9,9 @@ files {
 	'pedpersonality.meta',
 	'weaponanimations.meta',
 	'weaponarchetypes.meta',
+	'weapon_shiv.meta',
 	'weapon_katanas.meta',
+	'weapon_bats.meta'
 	}
 
 ---------------------------------------------------------------------------
@@ -19,5 +21,9 @@ files {
 	data_file 'PED_PERSONALITY_FILE' 'pedpersonality.meta'
 	data_file 'WEAPON_ANIMATIONS_FILE' 'weaponanimations.meta'
 	data_file 'WEAPON_METADATA_FILE' 'weaponarchetypes.meta'
+	data_file 'WEAPONINFO_FILE' 'weapon_shiv.meta'
+	data_file 'WEAPONINFO_FILE_PATCH' 'weapon_shiv.meta'
 	data_file 'WEAPONINFO_FILE' 'weapon_katanas.meta'
 	data_file 'WEAPONINFO_FILE_PATCH' 'weapon_katanas.meta'
+	data_file 'WEAPONINFO_FILE' 'weapon_bats.meta'
+	data_file 'WEAPONINFO_FILE_PATCH' 'weapon_bats.meta'
